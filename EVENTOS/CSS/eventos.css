@@ -79,5 +79,18 @@ main {
 
   .evento h2 {
     font-size: 1.2rem;
+body.eventos-page {
+  opacity: 0;
+  transition: opacity 600ms ease;
+}
+
+body.eventos-page.visible {
+  opacity: 1;
+}
+@media (prefers-reduced-motion: reduce) {
+  body.eventos-page,
+  body.eventos-page.visible {
+    transition: none !important;
+    opacity: 1 !important;
   }
 }
