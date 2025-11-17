@@ -4,12 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <title>Eventos | Stranger Things</title>
+
+  <!-- CSS -->
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="stylesheet" href="./CSS/eventos.css">
-    <link rel="icon" href="../imagenes/favicon-16x16.png">
+
+  <!-- FAVICON -->
+  <link rel="icon" href="../imagenes/favicon-16x16.png">
 </head>
 
-<body>
+<body class="eventos-page">
+
   <nav class="navbar">
     <input type="checkbox" id="menu-toggle">
 
@@ -32,12 +37,9 @@
   </nav>
 
   <main>
-      <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      document.body.classList.add("visible");
-    });
-  </script>
+
     <section class="eventos">
+
       <!-- Evento 1 -->
       <div class="evento">
         <img src="./IMAGENES/evento1.jpg" alt="Experiencia en el Laboratorio de Hawkins">
@@ -63,8 +65,17 @@
           </p>
         </div>
       </div>
-    </section>
-  </main>
-<body class="eventos-page">
 
+    </section>
+
+  </main>
+
+  <!-- TRANSICIÓN FADE-IN -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.body.classList.add("visible");
+    });
+  </script>
+
+</body>
 </html>
